@@ -20,6 +20,6 @@ public class Building {
     }
 
     public Integer getResidents(){
-        return 0;
+        return residents.length;
     }
 }

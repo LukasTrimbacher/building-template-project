@@ -13,4 +13,9 @@ public class BuildingUT {
         Building tower = new Building(1, residents);
         Assert.assertNotEquals(null, tower);
     }
+    @Test
+    public void residentsSizeShouldBe1AfterCreatingWithOneInitialResident(){
+        Building tower = new Building(1, "Josef");
+        Assert.assertEquals(1, (int) tower.getResidents());
+    }
 }
